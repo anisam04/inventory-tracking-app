@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+</head>
+<body class="container">
+<header>
+  <%- include('../partials/header') %>
+</header>
+<br>
+<div>
+    <p>Item Name: <%= oneInventory.itemName.itemName %></p>
+    <p>Warehouse: <%= oneInventory.warehouse.warehouseLocation %></p>
+    <p>Quantity: <%= oneInventory.quantity %></p>
+    </div>
+<h3>Update Inventory</h3>
+<form action="/inventory/<%=oneInventory._id %>?_method=PUT" method="POST">
+    <div class="form-group">
+        <label>Quantity: </label>
+        <input name="quantity" class="form-control">
+      </div>
+    <input type="submit" value="Submit" class="form-control btn btn-primary"/>
+  </form>
+
+
+
+</body>
+<footer>
+    <%- include('../partials/footer') %>
+  </footer>
+</html>

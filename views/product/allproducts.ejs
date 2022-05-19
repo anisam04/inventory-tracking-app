@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+</head>
+<body class="container">
+<header>
+  <%- include('../partials/header') %>
+</header>
+<br>
+<div class="text-right">
+<a href="/addproduct" class="btn btn-primary">Add a Product</a>
+</div>
+<br>
+
+<% products.forEach(function(p){ %>
+  <div class="card-columns">
+  <div class="card">
+    <div class="card-body">
+        <h3><%= p.itemName  %></h3>
+        <p><%= p.itemDescription  %></p>
+        <h3><%= p.costPerItem  %> CAD</h3>
+    </div>
+  </div>
+  </div>
+  
+  <% }) %> 
+  
+  <footer>
+    <%- include('../partials/footer') %>
+  </footer>
+</body>
+
+</html>

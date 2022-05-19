@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+  <body class="container">
+<header>
+  <%- include('../partials/header') %>
+</header>
+<h3>Add a product</h3>
+
+<form action="/allproducts" method="POST">
+  <div class="form-group">
+    <label>Plant Name:</label>
+    <input name="itemName" type="text" required class="form-control" /> <br />
+    <label>Plant Description:</label>
+    <input name="itemDescription" type="text" required class="form-control" /> <br />
+    <label>Cost: </label>
+    <input name="costPerItem" type="number" required class="form-control" /> <br />
+  </div>
+    <input type="submit" value="Add Product" class="btn btn-primary" />
+  </form>
+  <footer>
+    <%- include('../partials/footer') %>
+  </footer>
+</body>
+</html>

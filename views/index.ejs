@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body class="container">
+  <header>
+    <%- include('partials/header') %>
+  </header>
+  <br> <br> <br>
+  
+      <h3>Welcome to the inventory tracking application for Plantwali.</h3>
+      <br>
+      <h5>Please note the following to make the best use of this app:</h5>
+      <ul>
+      <li>Currently, the business sells 5 kinds of plants and they can be viewed <a href="/allproducts">here</a>
+      or from the Navigation bar above.</li>
+      <li>The Warehouse section can be viewed <a href="/allwarehouses">here</a> 
+        or from the Navigation bar above. You may also add a new warehouse within this section</li>
+      <li>Finally, the Inventory section can be viewed <a href="/allinventory">here</a> or from the Navigation bar above. 
+      <ul>
+        <li>The Inventory form has its data auto-populated from the products and warehouses section. Any new data added will also show up in the drop down.</li>
+        <li>Simply select your choice of item, warehouse and add the quantity. Then click "Add to Inventory to add it to the Inventory List.</li>
+        <li>Each Inventory may be edited or deleted by navigating to their respective buttons on each inventory list item.</li>
+      </ul>  
+      </li>
+      <li>In case of further questions, please write to anisam.samajpati@gmail.com</li>
+    </ul>
+    
+      
+    <footer>
+      <%- include('partials/footer') %>
+    </footer>
+  </body>
+</html>
