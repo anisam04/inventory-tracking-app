@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.DATABASE_URL,
+mongoose.connect('mongodb+srv://ani:ani123@sei-flex.ot4ud.mongodb.net/cohorts?retryWrites=true&w=majority',
   { useNewUrlParser: true, }
 );
 
