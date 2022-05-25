@@ -2,7 +2,7 @@
 View App: [Replit Link](https://replit.com/join/qzkcnighkl-ani0104)
 
 # 🗺️ About The Project 
-Build an inventory tracking web application for a logistics company.
+Build an inventory tracking web application.
 Requirements:
 * Basic CRUD Functionality:
    * Create inventory items
